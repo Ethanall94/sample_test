@@ -105,28 +105,6 @@
     gap: 20px;
 }
 
-/* field */
-.field {
-    display: flex;
-    flex-direction: column;
-
-    gap: 6px;
-}
-
-.field input {
-    padding: 6px 4px;
-
-    border: none;
-    border-bottom: 1px solid var(--main-color);
-
-    background:transparent;
-}
-
-.field input:focus {
-    outline: none;
-    border-bottom: 2px solid var(--main-color);
-}
-
 /* cycle */
 .cycle-input {
     display: flex;
@@ -142,40 +120,12 @@
     text-align: center;
 }
 
-/* start button */
-.signup-btn {
-    margin-top: 1dvh;
-    padding: 12px;
-
-    text-align: center;
-    text-decoration: none;
-
-    border-radius: 10px;
-
-    color: var(--point-color);
-    background-color: var(--main-color);
-}
-
 /* remove number arrows */
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance:none;
     margin:0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* btn */
 .btn {
@@ -187,8 +137,8 @@ input[type=number]::-webkit-outer-spin-button {
 
     color: var(--main-text-color);
 
-    font-size:16px;
-    cursor:pointer;
+    font-size: var(--font-md);
+    cursor: pointer;
 }
 
 .slide-btn {
