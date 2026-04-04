@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Morn</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/calendar.css">
+</head>
+<body>
+    <header id="header">
+        <a class="header-logo" href="index.html">
+            <!-- <img src="assets/small_logo.png" alt="logo"> -->
+            <p>moon<br>morn</p>
+        </a>
+
+        <a class="moon-hover">
+            <img src="assets/icon.png" alt="icon">
+            <p class="moon-icon-tip">
+                <span>- how to use</span>
+                <span>- contact</span>
+            </p>
+        </a>
+    </header>
+
+    <main id="main">
+    <div class="calendar-header">
+        <div class="month-contents">
+        <button id="prevMonth">←</button>
+        <div id="calenderMonth"></div>
+        <button id="nextMonth">→</button>
+        </div>
+        <div id="calendarYear"></div>
+    </div>
+
+    <div class="calendar-weekdays">
+        <span>Sun</span>
+        <span>Mon</span>
+        <span>Tue</span>
+        <span>Wed</span>
+        <span>Thu</span>
+        <span>Fri</span>
+        <span>Sat</span>
+    </div>
+
+    <div id="calendarGrid" class="calendar-grid"></div>
+    </div>
+
+    <!-- modal -->
+    <div id="periodModal" class="period-modal">
+        <div class="modal-content">
+        <form id="periodForm">
+        
+        <label class="field">
+        <span class="field-title">Date</span>
+        <input id="today" type="date" required>
+        </label>
+
+        <label class="field">
+        <span class="field-title">memo</span>
+        <input id="memo" type="text">
+        </label>
+
+        <div class="form-buttons">
+            <a id="cancelModal" class="form-btn">Cancel</a>
+            <a id="submitModal" class="form-btn">Save</a>
+        </div>
+
+        </form>
+        </div>
+    </div>
+    </main>
+
+    <footer id="footer">
+        <p>© 2026 Moon Morn</p>
+    </footer>
+
+</body>
+<script src="js/calendar.js"></script>
+</html>

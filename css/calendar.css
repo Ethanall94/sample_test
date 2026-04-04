@@ -1,0 +1,133 @@
+.calendar-card {
+    height: 100%;
+
+    padding: 16px;
+    margin: 16px;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 16px;
+    background: var(--card-bg);
+}
+
+/* calendar-header */
+.calendar-header {
+    margin-bottom: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar-header button {
+    font-size: 20px;
+
+    cursor: pointer;
+
+    color: var(--main-text);
+
+    border: none;
+    background: none;
+}
+
+.month-contents {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    gap: 5px;
+}
+
+#calenderMonth, 
+#calendarYear {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+
+    color: var(--main-text);
+}
+
+#calenderMonth {
+    width: 7dvh;
+}
+
+#calendarYear {
+    width: 5dvh;
+}
+
+/* weekdays */
+.calendar-weekdays {
+    margin-bottom: 10px;
+
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(7,1fr);
+
+    font-size: var(--font-xs);
+}
+
+/* calendar grid */
+.calendar-grid {
+    flex: 1;
+
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(6,1fr);
+    
+    gap: 4px;
+}
+
+.calendar-day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.calendar-day span {
+    font-size: var(--font-xs);
+}
+
+.calendar-day:hover {
+    background: var(--point-color);
+}
+
+/* modal */
+.period-modal {
+    position: fixed;
+    inset: 0;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--dark-card-bg);
+
+    padding: 15px;
+}
+
+.modal-content {
+    width: 100%;
+
+    padding: 20px;
+
+    border-radius: 10px;
+    background-color: var(--tip-bg);
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
