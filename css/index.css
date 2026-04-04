@@ -1,0 +1,197 @@
+/* intro */
+#intro {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../assets/background_wide.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    z-index: 100;
+}
+
+.tap {
+    font-size: var(--font-md);
+    color: var(--main-text);
+}
+
+
+/* main */
+#onboarding,
+#signup-page {
+    /* width: ;
+    height: ; */
+
+    margin: auto;
+
+    border-radius: 15px;
+
+    background-color: var(--card-bg);
+}
+
+/* main > onboarding */
+#onboarding {
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-radius: 15px;
+}
+
+/* main > dot-indicator */
+.dot-indicator {
+    margin-top: 20px;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+
+    margin: 5px;
+
+    display: inline-block;
+
+    border-radius: 50%;
+
+    background-color: var(--dot-color);
+}
+
+.dot.active {
+    background-color: var(--main-color);
+}
+
+/* main > slider */
+.slider {
+    overflow: hidden;
+    margin: 5dvw;
+}
+
+.cards {
+    display: flex;
+    transition: 0.4s;
+}
+
+.card {
+    min-width: 100%;
+}
+
+.card h1 {
+    font-size: var(--font-md);
+    margin: 30px 0px;
+}
+
+/* main > singup */
+#signup-page {
+    display: none;
+
+    padding: 4dvh;
+
+    flex-direction:column;
+    justify-content:center;
+}
+
+/* form */
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+/* field */
+.field {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+.field input {
+    padding: 6px 4px;
+
+    border: none;
+    border-bottom: 1px solid var(--main-color);
+
+    background:transparent;
+}
+
+.field input:focus {
+    outline: none;
+    border-bottom: 2px solid var(--main-color);
+}
+
+/* cycle */
+.cycle-input {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+}
+
+.cycle-input input {
+    width: 60px;
+
+    text-align: center;
+}
+
+/* start button */
+.signup-btn {
+    margin-top: 1dvh;
+    padding: 12px;
+
+    text-align: center;
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    color: var(--point-color);
+    background-color: var(--main-color);
+}
+
+/* remove number arrows */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance:none;
+    margin:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* btn */
+.btn {
+    background: none;
+    border: none;
+    text-decoration: none;
+
+    padding: 12px 30px;
+
+    color: var(--main-text-color);
+
+    font-size:16px;
+    cursor:pointer;
+}
+
+.slide-btn {
+    display: flex;
+    justify-content: space-between;
+}

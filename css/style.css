@@ -1,0 +1,155 @@
+:root {
+    /* bg-color */
+    --bg: #fc4646; /* test */
+    --tip-bg: #f6f6f6; /* test */
+    --card-bg: #f6f6f666; /* test */
+    --header-bg: greenyellow; /* test */
+    --footer-bg: skyblue; /* test */
+
+    /* color */
+    --main-color: #b46e6e;
+    --point-color: #eeeeee;
+    --dot-color: #eeeeee;
+
+    /* line-color */
+    --line: purple; /* test */
+
+    /* text-color */
+    --logo-text: orange; /* test */
+    --tip-text: #b46e6e; /* test */
+    --main-text: #b46e6e; /* test */
+
+    /* size */
+    --max-width: 600px;
+    --header-h: 8dvh;
+    --footer-h: 6dvh;
+    --moon-icon-h: clamp(20px, 6dvh, 40px);
+
+    /* text-sixe */
+    --header-font: clamp(14px, 2.5dvh, 25px);
+    --footer-font: clamp(12px, 1.8dvh, 20px);
+    --font-xs: clamp(12px, 2dvh, 14px); /* test */
+    --font-sm: clamp(14px, 2.5dvh, 16px); /* test */
+    --font-md: clamp(16px, 3dvh, 18px); /* test */
+}
+
+body {
+    height: 100dvh;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: Arial, sans-serif;
+
+    background-color: var(--bg);
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    background-image: url(../assets/background_wide.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* header */
+#header {
+    height: var(--header-h);
+    padding: 8px 16px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid var(--line);
+
+    background-color: var(--header-bg);
+}
+
+#header a {
+    font-size: var(--header-font);
+    text-decoration: none;
+    color: var(--logo-text);
+}
+
+/* .header-logo img {
+    height: 3.5dvh;
+} */
+
+.moon-hover img {
+    height: var(--moon-icon-h);
+}
+
+.moon-icon-tip,
+.moon-hover:hover .moon-icon-tip {
+    width: fit-content;
+    height: fit-content;
+
+    padding: 2dvh;
+
+    top: 3.5dvh;
+    right: 4dvh;
+
+    color: var(--tip-text);
+    background-color: var(--tip-bg);
+    border-radius: 10px;
+}
+
+.moon-icon-tip span {
+    white-space: nowrap;
+}
+
+/* hover event */
+.moon-hover {
+    position: relative;
+}
+
+.moon-icon-tip {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.moon-icon-tip::before {
+    position: absolute;
+}
+
+.moon-hover:hover .moon-icon-tip {
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+
+
+/* footer */
+#footer {
+    height: var(--footer-h);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: var(--footer-font);
+
+    border-top: 1px solid var(--line);
+    background-color: var(--footer-bg);
+}
+
+
+/* main */
+#main {
+    flex: 1;
+    
+    width: 100%;
+    max-width: var(--max-width);
+
+    /* margin: auto; */
+    margin-left: auto;
+    margin-right: auto;
+
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
+}

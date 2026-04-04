@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Morn</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div id="intro">
+        <p class="tap">Tap to Start</p>
+    </div>
+
+    <header id="header">
+        <a class="header-logo" href="index.html">
+            <!-- <img src="assets/small_logo.png" alt="logo"> -->
+            <p>moon<br>morn</p>
+        </a>
+
+        <a class="moon-hover">
+            <img src="assets/icon.png" alt="icon">
+            <p class="moon-icon-tip">
+                <span>- how to use</span>
+                <span>- contact</span>
+            </p>
+        </a>
+    </header>
+
+    <main id="main">
+    <div id="onboarding">
+    <!-- dot -->
+    <div class="dot-indicator">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <!-- slider -->
+    <div class="slider">
+    <div class="cards">
+        <div class="card">
+            <h1>title</h1>
+            <p>messages</p>
+        </div>
+        <div class="card">
+            <h1>title</h1>
+            <p>messages</p>
+        </div>
+        <div class="card">
+            <h1>title</h1>
+            <p>messages</p>
+        </div>
+    </div>
+    </div>
+
+    <!-- button -->
+    <div class="slide-btn">
+        <a class="skip btn">Skip</a>
+        <a id="nextBtn" class="btn">Next</a>
+    </div>
+    </div>
+
+    <div id="signup-page">
+        <div class="form-group">
+
+        <label class="field">
+        <span class="field-title">ID</span>
+        <input type="text" id="userId">
+        </label>
+
+        <label class="field">
+        <span class="field-title">Password</span>
+        <input type="password" id="userPw">
+        </label>
+
+        <label class="field">
+        <span class="field-title">Mail</span>
+        <input type="text" id="mail">
+        </label>
+
+        <label class="field">
+        <span class="field-title">월경주기</span>
+
+        <span class="cycle-input">
+            <input id="cycleLength" type="number" placeholder="28">
+            <span class="unit">days</span>
+        </span>
+
+        <label class="cycle-unknown">
+            <input id="cycleUnknown" type="checkbox">
+            월경주기를 작성하지 않고 넘어갈래요
+        </label>
+        </label>
+
+        <a id="signup" class="signup-btn" href="main.html">start</a>
+    </div>
+    </main>
+
+    <footer id="footer">
+        <p>© 2026 Moon Morn</p>
+    </footer>
+
+</body>
+<script src="js/index.js"></script>
+</html>
