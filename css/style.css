@@ -1,10 +1,12 @@
 :root {
+    /* test code */
+    /* --bg: #fc4646; */
+    /* --header-bg: greenyellow; */
+    /* --footer-bg: skyblue; */
+    
     /* bg-color */
-    --bg: #fc4646; /* test */
     --tip-bg: #f6f6f6; /* test */
     --card-bg: #f6f6f666; /* test */
-    --header-bg: greenyellow; /* test */
-    --footer-bg: skyblue; /* test */
 
     /* color */
     --main-color: #b46e6e;
@@ -41,7 +43,8 @@ body {
 
     font-family: Arial, sans-serif;
 
-    background-color: var(--bg);
+    /* test code */
+    /* background-color: var(--bg); */
 
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -63,9 +66,9 @@ body {
     justify-content: space-between;
     align-items: center;
 
-    border-bottom: 1px solid var(--line);
-
-    background-color: var(--header-bg);
+    /* test code */
+    /* border-bottom: 1px solid var(--line); */
+    /* background-color: var(--header-bg); */
 }
 
 #header a {
@@ -132,8 +135,9 @@ body {
 
     font-size: var(--footer-font);
 
-    border-top: 1px solid var(--line);
-    background-color: var(--footer-bg);
+    /* test code */
+    /* border-top: 1px solid var(--line); */
+    /* background-color: var(--footer-bg); */
 }
 
 
