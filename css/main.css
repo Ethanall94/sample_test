@@ -1,0 +1,42 @@
+.contents {
+    margin: auto;
+}
+
+.status {
+    margin: 4dvh 1dvh;
+    gap: 10px;
+
+    display: flex;
+    align-items: center;
+
+    color: var(--main-text);
+}
+
+.status img {
+    height: 3dvh;
+}
+
+.choice-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.choice-card {
+    width: 40dvh;
+    height: 15dvh;
+
+    margin: 2dvh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+
+    border-radius: 15px;
+
+    color: var(--main-text);
+    background-color: var(--card-bg);
+}
