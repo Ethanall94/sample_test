@@ -193,3 +193,30 @@ body {
     color: var(--point-color);
     background-color: var(--main-color);
 }
+
+.menu {
+    margin: 2dvh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.menu-btn {
+    width: 20dvw;
+
+    padding: 1dvh 1dvh;
+
+    display: flex;
+    justify-content: center;
+
+    font-size: var(--font-md);
+    text-decoration: none;
+
+    color: var(--main-color);
+
+    border-bottom: 1px solid var(--main-color);
+}
