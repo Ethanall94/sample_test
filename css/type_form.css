@@ -1,7 +1,6 @@
 .choice-cards {
     overflow-y: scroll;
-    -ms-overflow-style: none;
-
+    
     margin: auto;
 }
 
