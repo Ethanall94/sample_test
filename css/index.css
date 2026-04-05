@@ -87,6 +87,10 @@
     margin: 30px 0px;
 }
 
+.card p {
+    margin: 10px;
+}
+
 /* main > singup */
 #signup-page {
     display: none;
