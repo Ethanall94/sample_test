@@ -1,0 +1,78 @@
+.choice-cards {
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+
+    margin: auto;
+}
+
+.choice-cards::-webkit-scrollbar {
+    display: none;
+}
+
+.accordion-control-btn {
+    display: flex;
+    justify-content: flex-end;
+
+    padding: 2dvh;
+}
+
+.accordion-control-btn a {
+    margin: 0 2dvh;
+    padding: 1dvh 2dvh;
+
+    font-size: var(--font-xs);
+
+    border-radius: 10px;
+    background-color: var(--tip-bg);
+}
+
+.accordion-control-btn #closeAll {
+    display: none;
+}
+
+.all-accordion-btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.choice-card {
+    width: 65dvw;
+
+    padding: 4dvh;
+    margin: 1.5dvh;
+
+    border-radius: 15px;
+
+    color: var(--main-text);
+    background-color: var(--card-bg);
+}
+
+.card {    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: var(--font-md);
+}
+
+.choices {
+    display: none;
+
+    margin-top:1.5dvh;
+
+    flex-direction: column;
+
+    gap:0.7dvh;
+}
+
+.choice-card.open .card {
+    margin-bottom: 4dvh;
+}
+
+.choice-card.open .choices {
+    display: flex;
+}
+
+.choices label {
+    margin-left: 0.5dvh;
+}
