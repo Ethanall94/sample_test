@@ -8,7 +8,7 @@
     flex-direction: column;
 
     border-radius: 16px;
-    background: var(--card-bg);
+    background-color: var(--card-bg);
 }
 
 /* calendar-header */
